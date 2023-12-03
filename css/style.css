@@ -547,6 +547,10 @@ h6 {
   max-width: 3.5625rem;
 }
 
+.b-quote {
+  font-style: italic;
+}
+
 .b-quote span {
   display: block;
   font-style: normal;
@@ -1323,10 +1327,6 @@ h6 {
     display: none;
   }
 
-  .blog-item:nth-child(even) {
-    margin-left: 0;
-  }
-
   .more__text {
     font-size: 0.8125rem;
   }
@@ -1465,10 +1465,6 @@ h6 {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-  }
-
-  .blog-item:nth-child(even) {
-    margin-left: 10%;
   }
 
   .more__title {
@@ -2361,6 +2357,12 @@ h6 {
           flex-basis: calc(28.4375rem + 5.4375 * (100vw - 62.5rem) / 12.5);
     }
 }
+}
+
+@media ((min-width: 30em) and (max-width: 62.5em)) {
+  .blog-item:nth-child(even) {
+    margin-left: 10%;
+  }
 }
 
 @media (min-width: 30em) and (max-width: 62.5em) {
