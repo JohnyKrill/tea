@@ -1,12 +1,42 @@
-@import url(https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;
-
-0,400;0,600;1,300&display=swap);
 @charset "UTF-8";
+
 @font-face {
   font-family: Cormorant;
   font-display: swap;
   src: url("../fonts/Cormorant-Regular.woff2") format("woff2"), url("../fonts/Cormorant-Regular.woff") format("woff");
   font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: OpenSans;
+  font-display: swap;
+  src: url("../fonts/OpenSans-Light.woff2") format("woff2"), url("../fonts/OpenSans-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: OpenSans;
+  font-display: swap;
+  src: url("../fonts/OpenSans-LightItalic.woff2") format("woff2"), url("../fonts/OpenSans-LightItalic.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: OpenSans;
+  font-display: swap;
+  src: url("../fonts/OpenSans-Regular.woff2") format("woff2"), url("../fonts/OpenSans-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: OpenSans;
+  font-display: swap;
+  src: url("../fonts/OpenSans-SemiBold.woff2") format("woff2"), url("../fonts/OpenSans-SemiBold.woff") format("woff");
+  font-weight: 600;
   font-style: normal;
 }
 
@@ -131,7 +161,7 @@ body {
 body {
   color: #151618;
   line-height: 1;
-  font-family: "Open Sans", sans-serif;
+  font-family: "OpenSans", sans-serif;
   font-size: 1rem;
   -ms-text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
@@ -143,7 +173,7 @@ body {
 input,
 button,
 textarea {
-  font-family: "Open Sans", sans-serif;
+  font-family: "OpenSans", sans-serif;
   font-size: inherit;
   line-height: inherit;
 }
@@ -515,6 +545,10 @@ h6 {
 
 .b-contacts__item img {
   max-width: 3.5625rem;
+}
+
+.b-quote {
+  font-style: italic;
 }
 
 .b-quote span {
@@ -1293,10 +1327,6 @@ h6 {
     display: none;
   }
 
-  .blog-item:nth-child(even) {
-    margin-left: 0;
-  }
-
   .more__text {
     font-size: 0.8125rem;
   }
@@ -1435,10 +1465,6 @@ h6 {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-  }
-
-  .blog-item:nth-child(even) {
-    margin-left: 10%;
   }
 
   .more__title {
@@ -2333,6 +2359,12 @@ h6 {
 }
 }
 
+@media ((min-width: 30em) and (max-width: 62.5em)) {
+  .blog-item:nth-child(even) {
+    margin-left: 10%;
+  }
+}
+
 @media (min-width: 30em) and (max-width: 62.5em) {
 @supports (font-size: clamp( 0.8125rem , 0.4086538462rem  +  1.3461538462vw , 1.25rem )) {
     .more__text {
@@ -2448,5 +2480,6 @@ h6 {
 .webp .more{ background: #f7f2ea url(../img/more-bg.webp) 100% 100%/contain no-repeat; }
 
 @media (min-width: 62.5em){
+
   .webp .hero{ background: url(../img/hero_bg.webp) 50% 100%/cover no-repeat; }
 }
